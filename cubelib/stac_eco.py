@@ -119,6 +119,9 @@ class Stac_eco:
         rt = self.curator + ' ' + self.collection + ' ' + self.geojson_file
         return rt
 
+    def set_collection(self, new_collection="landsat-c2l2alb-sr"):
+        self.collection=new_collection
+
     def search(self, datetime, cloud_cover=50, geo_operation="intersects"):
         collection = self.collection
         collection = self.collection
